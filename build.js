@@ -26764,19 +26764,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 //酒店服务数据
 var category = [{
-    src: '../../static/imgs/goods/01.jpg',
+    src: '../static/imgs/goods/01.jpg',
     title: "这是XX酒店的按摩服务",
     detail: "我们的按摩服务有......"
 }, {
-    src: '../../static/imgs/goods/01.jpg',
+    src: '../static/imgs/goods/01.jpg',
     title: "这是XX酒店的餐厅服务",
     detail: "我们的餐厅服务有......"
 }, {
-    src: '../../static/imgs/goods/01.jpg',
+    src: '../static/imgs/goods/01.jpg',
     title: "这是XX酒店的游戏服务",
     detail: "我们的游戏服务有......"
 }, {
-    src: '../../static/imgs/goods/01.jpg',
+    src: '../static/imgs/goods/01.jpg',
     title: "这是XX酒店的健身服务",
     detail: "我们的健身服务有......"
 }];
@@ -26792,13 +26792,13 @@ var category1 = [{
 
 // 首页轮播图数据
 var lunboJson = [{
-    src: '/static/imgs/banner/01.jpg',
+    src: './static/imgs/banner/01.jpg',
     url: 'javascript:;'
 }, {
-    src: '/static/imgs/banner/02.jpg',
+    src: './static/imgs/banner/02.jpg',
     url: 'javascript:;'
 }, {
-    src: '/static/imgs/banner/03.jpg',
+    src: './static/imgs/banner/03.jpg',
     url: 'javascript:;'
 }];
 var lunboData = _mockjs2.default.mock({
