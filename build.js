@@ -11270,6 +11270,16 @@ module.exports = Cancel;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
 	data() {
@@ -36548,7 +36558,7 @@ exports = module.exports = __webpack_require__(0)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -36562,11 +36572,48 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticStyle: { "font-size": "25px" } }, [
-    _vm._v("\n\t设置\n\n")
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("form", { staticClass: "mui-input-group" }, [
+      _c("div", { staticClass: "mui-input-row" }, [
+        _c("label", [_vm._v("用户名")]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "mui-input-clear",
+          attrs: { type: "text", placeholder: "请输入用户名" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mui-input-row" }, [
+        _c("label", [_vm._v("密码")]),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "mui-input-password",
+          attrs: { type: "password", placeholder: "请输入密码" }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "mui-button-row" }, [
+        _c(
+          "button",
+          { staticClass: "mui-btn mui-btn-primary", attrs: { type: "button" } },
+          [_vm._v("登录")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "mui-btn mui-btn-danger", attrs: { type: "button" } },
+          [_vm._v("注册")]
+        )
+      ])
+    ])
+  }
+]
 render._withStripped = true
 var esExports = { render: render, staticRenderFns: staticRenderFns }
 /* harmony default export */ __webpack_exports__["a"] = (esExports);
@@ -37334,126 +37381,124 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "mui-table-view mui-grid-view select-time" },
-    [
-      _c("div", { attrs: { id: "rent-time" } }, [
-        _vm._v("xx酒店（xx分店）-------点击提交进行房型选购\n    ")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "calendar-box clear" }),
-      _vm._v(" "),
-      _c("hr", { staticStyle: { width: "100vw" } }),
-      _vm._v(" "),
-      _c("div", { staticClass: "left" }, [
-        _c("p", [_vm._v("入住日期：")]),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.bv1,
-              expression: "bv1"
-            }
-          ],
-          staticStyle: {
-            "margin-left": "3%",
-            width: "160px",
-            "margin-right": "9vw"
-          },
-          attrs: { type: "date", id: "date1" },
-          domProps: { value: _vm.bv1 },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.bv1 = $event.target.value
-            }
-          }
-        }),
-        _c(
-          "button",
-          {
-            staticStyle: {
-              "margin-left": "3%",
-              position: "relative",
-              top: "-10px",
-              width: "25vw",
-              height: "6vh"
-            },
-            attrs: { id: "btn1" },
-            on: { click: _vm.btnclick }
-          },
-          [_vm._v("确定日期")]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "right" }, [
-        _c("p", [_vm._v("离店时期：")]),
-        _vm._v(" "),
-        _c("input", {
-          directives: [
-            {
-              name: "model",
-              rawName: "v-model",
-              value: _vm.bv2,
-              expression: "bv2"
-            }
-          ],
-          staticStyle: {
-            "margin-left": "3%",
-            width: "160px",
-            "margin-right": "9vw"
-          },
-          attrs: { type: "date", id: "date2" },
-          domProps: { value: _vm.bv2 },
-          on: {
-            input: function($event) {
-              if ($event.target.composing) {
-                return
-              }
-              _vm.bv2 = $event.target.value
-            }
-          }
-        }),
-        _c(
-          "button",
-          {
-            staticStyle: {
-              "margin-left": "3%",
-              position: "relative",
-              top: "-10px",
-              width: "25vw",
-              height: "6vh"
-            },
-            attrs: { id: "btn2" },
-            on: { click: _vm.btnclick2 }
-          },
-          [_vm._v("确定日期")]
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [_vm._v("点击提交：")]),
-      _vm._v(" "),
+  return _c("div", { staticClass: "mui-table-view  select-time" }, [
+    _c("div", { attrs: { id: "rent-time mui-table-view-cell mui-media" } }, [
+      _vm._v("xx酒店（xx分店）-------点击提交进行房型选购\n    ")
+    ]),
+    _vm._v(" "),
+    _c("div", {
+      staticClass: "calendar-box clear mui-table-view-cell mui-media"
+    }),
+    _vm._v(" "),
+    _c("hr", { staticStyle: { width: "100vw" } }),
+    _vm._v(" "),
+    _c("div", { staticClass: "left mui-table-view-cell mui-media" }, [
+      _c("p", [_vm._v("入住日期：")]),
       _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.bv1,
+            expression: "bv1"
+          }
+        ],
         staticStyle: {
           "margin-left": "3%",
-          "margin-top": "2%",
-          width: "25vw",
-          height: "6vh",
-          color: "#e25a2a"
+          width: "160px",
+          "margin-right": "9vw"
         },
-        attrs: { type: "button", value: "提交", placeholder: "提交" },
+        attrs: { type: "date", id: "date1" },
+        domProps: { value: _vm.bv1 },
         on: {
-          click: function($event) {
-            return _vm.addCart1(_vm.bv1, _vm.bv2)
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.bv1 = $event.target.value
           }
         }
-      })
-    ]
-  )
+      }),
+      _c(
+        "button",
+        {
+          staticStyle: {
+            "margin-left": "3%",
+            position: "relative",
+            top: "-10px",
+            width: "25vw",
+            height: "6vh"
+          },
+          attrs: { id: "btn1" },
+          on: { click: _vm.btnclick }
+        },
+        [_vm._v("确定日期")]
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "right mui-table-view-cell mui-media" }, [
+      _c("p", [_vm._v("离店时期：")]),
+      _vm._v(" "),
+      _c("input", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.bv2,
+            expression: "bv2"
+          }
+        ],
+        staticStyle: {
+          "margin-left": "3%",
+          width: "160px",
+          "margin-right": "9vw"
+        },
+        attrs: { type: "date", id: "date2" },
+        domProps: { value: _vm.bv2 },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.bv2 = $event.target.value
+          }
+        }
+      }),
+      _c(
+        "button",
+        {
+          staticStyle: {
+            "margin-left": "3%",
+            position: "relative",
+            top: "-10px",
+            width: "25vw",
+            height: "6vh"
+          },
+          attrs: { id: "btn2" },
+          on: { click: _vm.btnclick2 }
+        },
+        [_vm._v("确定日期")]
+      )
+    ]),
+    _vm._v(" "),
+    _c("p", [_vm._v("点击提交：")]),
+    _vm._v(" "),
+    _c("input", {
+      staticStyle: {
+        "margin-left": "3%",
+        "margin-top": "2%",
+        width: "25vw",
+        height: "6vh",
+        color: "#e25a2a"
+      },
+      attrs: { type: "button", value: "提交", placeholder: "提交" },
+      on: {
+        click: function($event) {
+          return _vm.addCart1(_vm.bv1, _vm.bv2)
+        }
+      }
+    })
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
