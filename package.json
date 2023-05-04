@@ -29,7 +29,7 @@
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "mint-ui": "^2.2.13",
     "mockjs": "^1.0.1-beta3",
     "mui": "0.0.1",
